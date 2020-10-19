@@ -1,5 +1,5 @@
 # CookieManager
-A simple JS object to manage cookies\
+A simple JS class to manage cookies\
 CookieManager provides a way to simply manage cookies.
 
 ## Create a cookie
