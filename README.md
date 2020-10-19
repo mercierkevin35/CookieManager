@@ -6,6 +6,7 @@ CookieManager provides a way to simply manage cookies.
 To create a cookie whose name is "myCookie" and value is "my cookie value". Process as follows :
 
 ```javascript
+//Create
 var manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value";
@@ -15,6 +16,7 @@ If not specified, the cookie expires at the end of the session.
 To explicitly specify the expiration delay, process like so :
 
 ```javascript
+//Create
 var manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
@@ -27,12 +29,14 @@ The getCookies method returns a JS object containing each cookie as attributes\
 You can get a specific value like this :
 
 ```javascript
+//Create
 var manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
+//Read
 var myValue = manager.getCookies().myCookie // myValue == "my cookie value"
 ```
 Yo can also specify a key dynamically into brackets like this :
@@ -44,6 +48,7 @@ var manager = new CookieManager(),
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
+//Read
 var myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
 var dynamicKey = "myCookie";
 
