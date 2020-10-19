@@ -3,7 +3,7 @@ A simple JS object to manage cookies
 CookieManager provides a way to simply manage cookies.
 
 ## Create a cookie
-To create a cookie whose name is "key" and value is "value". Process as follows :
+To create a cookie whose name is "myCookie" and value is "my cookie value". Process as follows :
 
 ```javascript
 var manager = new CookieManager(),
