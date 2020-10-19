@@ -50,8 +50,8 @@ manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
 //Read
 var myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
-var dynamicKey = "myCookie";
 
+var dynamicKey = "myCookie";
 var theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
 ```
 
