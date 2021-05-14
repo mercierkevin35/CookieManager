@@ -13,7 +13,8 @@ import CookieManager from 'cookiemanager';
 ```
 
 ## Create a cookie
-To create a cookie whose name is "myCookie" and value is "my cookie value",\ proceed as follows :
+To create a cookie whose name is "myCookie" and value is "my cookie value"\
+proceed as follows :
 
 ```javascript
 //Create
