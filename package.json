@@ -1,0 +1,23 @@
+{
+  "name": "@mercierkevin35/cookiemanager",
+  "version": "1.0.0",
+  "description": "A simple cookie manager written in JS",
+  "main": "CookieManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercierkevin35/CookieManager.git"
+  },
+  "keywords": [
+    "cookie",
+    "cookies"
+  ],
+  "author": "Kévin Mercier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercierkevin35/CookieManager/issues"
+  },
+  "homepage": "https://github.com/mercierkevin35/CookieManager#readme"
+}

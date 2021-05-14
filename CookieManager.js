@@ -1,5 +1,5 @@
-function CookieManager(){
-    this.setCookie = function (key, value, expireDays=null){
+export default class CookieManager{
+    setCookie = (key, value, expireDays=null) => {
         var cookieString = key + "=" + value;
         if(expireDays){
             var d = new Date();
@@ -11,7 +11,7 @@ function CookieManager(){
 
     };
 
-    this.getCookies = function(){
+    getCookies = () => {
         var decodedCookies = decodeURIComponent(document.cookie);
         var cookies = {};
         decodedCookies = decodedCookies.split(";");
@@ -23,7 +23,7 @@ function CookieManager(){
         return cookies
     };
 
-    this.deleteCookie = function(key){
+    deleteCookie = (key) => {
         this.setCookie(key, "", -1);
     }
 }

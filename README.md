@@ -2,12 +2,22 @@
 A simple JS class to manage cookies\
 CookieManager provides a way to simply manage cookies.
 
+## Installation
+Using npm, run the following command :
+```
+npm i @mercierkevin35/cookiemanager
+```
+Then use it in your file
+```javascript
+import CookieManager from 'cookiemanager';
+```
+
 ## Create a cookie
 To create a cookie whose name is "myCookie" and value is "my cookie value". Process as follows :
 
 ```javascript
 //Create
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value";
 manager.setCookie(key, value);
@@ -17,7 +27,7 @@ To explicitly specify the expiration delay, process like so :
 
 ```javascript
 //Create
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
@@ -30,29 +40,29 @@ You can get a specific value like this :
 
 ```javascript
 //Create
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
 //Read
-var myValue = manager.getCookies().myCookie // myValue == "my cookie value"
+let myValue = manager.getCookies().myCookie // myValue == "my cookie value"
 ```
-Yo can also specify a key dynamically into brackets like this :
+You can also specify a key dynamically into brackets like this :
 
 ```javascript
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
 //Read
-var myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
+let myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
 
-var dynamicKey = "myCookie";
-var theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
+let dynamicKey = "myCookie";
+let theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
 ```
 
 ## Update a cookie value
@@ -60,17 +70,17 @@ To update a cookie value, just set a cookie with the same key
 
 ```javascript
 //Create
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
 //Read
-var myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
-var dynamicKey = "myCookie";
+let myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
+let dynamicKey = "myCookie";
 
-var theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
+let theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
 
 //Update
 manager.setCookie("myCookie", "my new cookie value");
@@ -81,17 +91,17 @@ To delete a cookie, use the deleteCookie method with the key as argument
 
 ```javascript
 //Create
-var manager = new CookieManager(),
+const manager = new CookieManager(),
     key = "myCookie",
     value = "my cookie value",
     expireDays = 7;
 manager.setCookie(key, value, expireDays); // this cookie expires in 7 days
 
 //Read
-var myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
-var dynamicKey = "myCookie";
+let myValue = manager.getCookies().myCookie; // myValue == "my cookie value"
+let dynamicKey = "myCookie";
 
-var theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
+let theValue = manager.getCookies()[dynamicKey]; // theValue == "my cookie value"
 
 //Update
 manager.setCookie("myCookie", "my new cookie value");
