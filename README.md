@@ -13,7 +13,7 @@ import CookieManager from 'cookiemanager';
 ```
 
 ## Create a cookie
-To create a cookie whose name is "myCookie" and value is "my cookie value". Process as follows :
+To create a cookie whose name is "myCookie" and value is "my cookie value",\ proceed as follows :
 
 ```javascript
 //Create
@@ -23,7 +23,7 @@ const manager = new CookieManager(),
 manager.setCookie(key, value);
 ```
 If not specified, the cookie expires at the end of the session.
-To explicitly specify the expiration delay, process like so :
+To explicitly specify the expiration delay, proceed like so :
 
 ```javascript
 //Create
