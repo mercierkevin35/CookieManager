@@ -9,7 +9,7 @@ npm i @mercierkevin35/cookiemanager
 ```
 Then use it in your file
 ```javascript
-import CookieManager from 'cookiemanager';
+import CookieManager from '@mercierkevin35/cookiemanager';
 ```
 
 ## Create a cookie
