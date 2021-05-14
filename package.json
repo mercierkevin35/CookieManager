@@ -1,6 +1,6 @@
 {
   "name": "@mercierkevin35/cookiemanager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple cookie manager written in JS",
   "main": "CookieManager.js",
   "scripts": {
